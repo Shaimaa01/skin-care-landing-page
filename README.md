@@ -1,12 +1,5 @@
-# React + Vite
+### Technical Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Pixel-Perfect Text Alignment:**
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To precisely match the "Cap Height" leading-trim specified in the Figma design for large display text, I implemented a solution using strategic margins. Since CSS does not yet have a native `leading-trim` property, using a very small `line-height` caused the text's bounding box to overflow. The added margins compensate for this overflow, ensuring true pixel-perfect alignment as seen in the design.

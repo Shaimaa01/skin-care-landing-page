@@ -1,11 +1,19 @@
-import "./App.css";
+import { useState, useEffect } from "react";
+import LoadingScreen from "./components/LoadingScreen";
+import LandingPage from "./components/LandingPage";
 
 function App() {
-  return (
-    <>
-      <h1 class="text-3xl font-bold font-inter text-primary underline">Hello world!</h1>
-    </>
-  );
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      // setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return isLoading ? <LoadingScreen /> : <LandingPage />;
 }
 
 export default App;
