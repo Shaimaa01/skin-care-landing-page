@@ -7,6 +7,7 @@
   --color-Stone: #E7E8E0;
   --color-Cream-100: #FEFFF4;
   --color-Cream-200: #EFF5E1;
+  --color-Lime-100: #F8FEE5;
 
   --breakpoint-sm: 25.125rem;
   /* 402px / 16 */
@@ -16,5 +17,11 @@
   /* 1920px / 16 */
 
   --font-inter: "Inter", sans-serif;
+}
+
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
