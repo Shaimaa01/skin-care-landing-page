@@ -5,6 +5,7 @@
   --color-Juniper: #2D3B36;
   --color-Sage: #35433E;
   --color-Stone: #E7E8E0;
+  --color-Moss: #525349;
   --color-Cream-100: #FEFFF4;
   --color-Cream-200: #EFF5E1;
   --color-Lime-100: #F8FEE5;
@@ -18,10 +19,23 @@
 
   --font-inter: "Inter", sans-serif;
   --border-dashed-circle: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%232D3B36' stroke-width='2' stroke-dasharray='0, 5' stroke-dashoffset='4' stroke-linecap='round'/%3e%3c/svg%3e");
+  --border-dotted-pill: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%232D3B36' stroke-width='2' stroke-dasharray='0, 5' stroke-linecap='round'/%3e%3c/svg%3e");
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.border-dotted-pill {
+  background-image: var(--border-dotted-pill);
+}
+
+
+@media (min-width: 46.5rem) {
+  .border-dotted-pill {
+    background-image: var(--border-dashed-circle);
+  }
 }

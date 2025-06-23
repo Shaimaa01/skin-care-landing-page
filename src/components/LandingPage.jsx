@@ -2,6 +2,7 @@ import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import Header from "./Header";
 import Hero from "./Hero";
+import ValuesSection from "./ValuesSection";
 
 const LandingPage = () => {
   const mainRef = useRef(null);
@@ -24,7 +25,8 @@ const LandingPage = () => {
     <div ref={mainRef} className="bg-Cream-200 font-inter">
       <Header />
       <main>
-        <Hero/>
+        <Hero />
+        <ValuesSection />
       </main>
     </div>
   );
