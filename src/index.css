@@ -39,3 +39,14 @@ body {
     background-image: var(--border-dashed-circle);
   }
 }
+
+@layer utilities {
+  /* A helper class to hide scrollbars on scrollable elements */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}

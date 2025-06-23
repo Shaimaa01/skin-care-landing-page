@@ -26,7 +26,7 @@ const ValuesSection = () => {
   return (
     <section className="flex flex-col lg:flex-row lg:justify-between lg:mt-[300px] lg:mx-[100px]">
       <div className="mt-[100px] lg:m-0  mx-[30px]  md:mx-[40px]  flex flex-col">
-        <div className="w-[218px] md:w-[260px] h-[50px] md:h-[60px] rounded-[100px] border border-Juniper bg-Cream-100 py-[15px] px-[20px] flex  gap-[20px] items-center">
+        <div className="w-[220px] md:w-[260px] h-[50px] md:h-[60px] rounded-[100px] border border-Juniper bg-Cream-100 py-[15px] px-[20px] flex  gap-[20px] items-center">
           <span className="w-[20px] h-[20px] bg-Juniper rounded-full"></span>
           <p className="text-[16px] md:text-[20px] leading-[100%] tracking-[0%] text-Juniper">
             Why Our Products
@@ -44,8 +44,8 @@ const ValuesSection = () => {
         </p>
 
         <ol className="mt-[80px]  flex flex-col gap-[60px] md:gap-[100px]">
-          {valuesData.map((item) => (
-            <li className="flex gap-[27px] md:gap-[50px]">
+          {valuesData.map((item , index) => (
+            <li  key={index} className="flex gap-[27px] md:gap-[50px]">
               <span className="h-fit text-[34px] md:text-[60px] leading-[100%] tracing-[-2%]  bg-clip-text text-transparent bg-[linear-gradient(180deg,#293330_0%,#FEFFF4_100%)] ">
                 {item.number}
               </span>
@@ -91,7 +91,7 @@ const ValuesSection = () => {
 
         <div className=" mx-[30px] lg:mx-0 flex justify-between text-[16px] md:text-[20px] leading-[100%] tracking-[-3%] md:tracking-[-2%] uppercase text-Juniper">
           <span>Since 2001</span>
-          <span>LEARN MORE</span>
+          <button>LEARN MORE</button>
         </div>
       </div>
     </section>
