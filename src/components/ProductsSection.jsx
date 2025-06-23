@@ -2,11 +2,11 @@ import { useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import ProductCard from "./ProductCard";
-import rightArrow from "/public/assets/icons/right arrow 1.svg";
-import leftArrow from "/public/assets/icons/left arrow 1.svg";
-import alyaSkin from "/public/assets/imgs/filip-knezevic-k-ElrinXWAk-unsplash 2.png";
-import ritualOfSakura from "/public/assets/imgs/cierra-henderson-LWIQp-0_b98-unsplash 1.png";
-import theBodyLotion from "/public/assets/imgs/mathilde-langevin-p3O5f4u95Lo-unsplash 1.png";
+import rightArrow from "/assets/icons/right arrow 1.svg";
+import leftArrow from "/assets/icons/left arrow 1.svg";
+import alyaSkin from "/assets/imgs/filip-knezevic-k-ElrinXWAk-unsplash 2.png";
+import ritualOfSakura from "/assets/imgs/cierra-henderson-LWIQp-0_b98-unsplash 1.png";
+import theBodyLotion from "/assets/imgs/mathilde-langevin-p3O5f4u95Lo-unsplash 1.png";
 
 gsap.registerPlugin(ScrollToPlugin);
 

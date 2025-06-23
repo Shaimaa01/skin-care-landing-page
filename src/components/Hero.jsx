@@ -1,5 +1,5 @@
-import girl from "/public/assets/imgs/ChatGPT Image Jun 15, 2025, 10_24_47 PM 3.png";
-import plumCream from "/public/assets/imgs/skin_care_beauty_cosmetic_packaging_design_agency_mumbai_delhi_bangalore_india 4.png";
+import girl from "/assets/imgs/ChatGPT Image Jun 15, 2025, 10_24_47 PM 3.png";
+import plumCream from "/assets/imgs/skin_care_beauty_cosmetic_packaging_design_agency_mumbai_delhi_bangalore_india 4.png";
 
 function Hero() {
   return (
@@ -53,8 +53,8 @@ function Hero() {
           </div>
         </div>
 
-        {/* for table media */}
-        <button className="w-[178px] md:w-[138px] lg:w-[180px]  h-[50px] lg:h-[60px] mt-[40px] mx-auto md:mx-0 rounded-[100px] bg-Juniper flex items-center justify-center text-[16px] lg:text-[20px] leading-[100%] tracking-[0%] text-Cream-200 hidden md:block lg:absolute lg:left-[100px]  ">
+        {/* for tablet media */}
+        <button className="w-[178px] md:w-[138px] lg:w-[180px]  h-[50px] lg:h-[60px] mt-[40px] mx-auto md:mx-0 rounded-[100px] bg-Juniper  items-center justify-center text-[16px] lg:text-[20px] leading-[100%] tracking-[0%] text-Cream-200 hidden md:flex lg:absolute lg:left-[100px]  ">
           Shop Now
         </button>
       </div>

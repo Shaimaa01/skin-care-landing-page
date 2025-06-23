@@ -1,5 +1,5 @@
-import womanWithEyePatches from "/public/assets/imgs/Jun 15, 2025, 11_52_20 PM 2.png"; // <-- REPLACE
-import awardIcon from "/public/assets/icons/award-svgrepo-com 1.svg";
+import womanWithEyePatches from "/assets/imgs/Jun 15, 2025, 11_52_20 PM 2.png"; // <-- REPLACE
+import awardIcon from "/assets/icons/award-svgrepo-com 1.svg";
 
 const valuesData = [
   {
@@ -44,8 +44,8 @@ const ValuesSection = () => {
         </p>
 
         <ol className="mt-[80px]  flex flex-col gap-[60px] md:gap-[100px]">
-          {valuesData.map((item , index) => (
-            <li  key={index} className="flex gap-[27px] md:gap-[50px]">
+          {valuesData.map((item, index) => (
+            <li key={index} className="flex gap-[27px] md:gap-[50px]">
               <span className="h-fit text-[34px] md:text-[60px] leading-[100%] tracing-[-2%]  bg-clip-text text-transparent bg-[linear-gradient(180deg,#293330_0%,#FEFFF4_100%)] ">
                 {item.number}
               </span>
@@ -75,7 +75,7 @@ const ValuesSection = () => {
                 <div className="  w-full h-full rounded-[50px] md:rounded-full bg-Juniper  flex justify-center items-center">
                   <img
                     src={awardIcon}
-                    alt="award icon" 
+                    alt="award icon"
                     className="md:w-[50px] md:h-[50px]"
                   />
                 </div>

@@ -1,4 +1,4 @@
-import cartIcon from "/public/assets/icons/cart-large-2-svgrepo-com 5.svg";
+import cartIcon from "/assets/icons/cart-large-2-svgrepo-com 5.svg";
 
 const ProductCard = ({ image, name, price }) => {
   return (
@@ -15,7 +15,11 @@ const ProductCard = ({ image, name, price }) => {
           </p>
         </div>
         <button className="cursor-pointer">
-          <img src={cartIcon} alt="Add to cart" className="w-[19px] h-[19px] md:w-[30px] md:h-[30px] " />
+          <img
+            src={cartIcon}
+            alt="Add to cart"
+            className="w-[19px] h-[19px] md:w-[30px] md:h-[30px] "
+          />
         </button>
       </div>
     </div>
