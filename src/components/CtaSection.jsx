@@ -1,4 +1,4 @@
-import womanWithLeaf from "/public/assets/imgs/ChatGPT Image Jun 16, 2025, 01_32_50 AM 1.png";
+import womanWithLeaf from "/assets/imgs/ChatGPT Image Jun 16, 2025, 01_32_50 AM 1.png";
 
 const CtaSection = () => {
   return (
@@ -8,6 +8,8 @@ const CtaSection = () => {
         alt="Woman holding skincare product"
         className="w-full h-full object-cover"
       />
+
+      <div className="absolute bottom-0 left-0 right-0 h-[400px] rounded-b-[30px] bg-gradient-to-b from-transparent to-[#293330]" />
 
       <div className="absolute top-[796px]  flex flex-col items-center gap-[65px] justify-end text-center ">
         <h2 className="text-[80px] leading-[100%] tracking-[-2%] max-w-[1037px] text-Cream-100">
