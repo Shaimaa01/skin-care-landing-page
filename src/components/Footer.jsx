@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="h-[550px] md:h-[748px] lg:h-[930px] bg-Juniper pt-[50px] md:pt-[100px] lg:pt-[200px] overflow-hidden ">
+    <footer className="mt-[50px] md:mt-[100px] lg:mt-[150px] h-[550px] md:h-[748px] lg:h-[930px] bg-Juniper pt-[50px] md:pt-[100px] lg:pt-[200px] overflow-hidden ">
       <div className="mx-[30px] md:mx-[40px] lg:mx-[100px] flex flex-col gap-[80px] md:gap-[100px] lg:flex-row justify-between">
         <div className="flex flex-col gap-[80px] md:gap-[60px] lg:gap-[270px]">
           <h2 className="text-[34px] md:text-[50px] lg:text-[60px] leading-[100%] tracking-[-2%] text-Stone max-w-[275px] md:max-w-[405px] lg:max-w-[485px]">
