@@ -2,7 +2,7 @@ import womanWithLeaf from "/assets/imgs/ChatGPT Image Jun 16, 2025, 01_32_50 AM 
 
 const CtaSection = () => {
   return (
-    <section className="hidden  lg:flex justify-center items-center w-[calc(100%-200px)] h-[1146px] mt-[300px] mb-[200px] mx-[100px] rounded-[30px] overflow-hidden relative">
+    <section className="hidden  lg:flex justify-center items-center w-[calc(100%-200px)] h-[1146px] mt-[300px]  mx-[100px] rounded-[30px] overflow-hidden relative">
       <img
         src={womanWithLeaf}
         alt="Woman holding skincare product"

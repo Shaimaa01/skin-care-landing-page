@@ -6,6 +6,7 @@ import ValuesSection from "./ValuesSection";
 import Footer from "./Footer";
 import ProductsSection from "./ProductsSection";
 import CtaSection from "./CtaSection";
+import ProductExplorer from "./ProductExplorer";
 
 const LandingPage = () => {
   const mainRef = useRef(null);
@@ -32,6 +33,7 @@ const LandingPage = () => {
         <ValuesSection />
         <ProductsSection />
         <CtaSection/>
+        <ProductExplorer/>
       </main>
       <Footer />
     </div>

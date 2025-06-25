@@ -1,4 +1,4 @@
-import cartIcon from "/assets/icons/cart-large-2-svgrepo-com 5.svg";
+import { CartIcon } from "../icons/CartIcon";
 
 const ProductCard = ({ image, name, price }) => {
   return (
@@ -14,12 +14,8 @@ const ProductCard = ({ image, name, price }) => {
             {price}
           </p>
         </div>
-        <button className="cursor-pointer">
-          <img
-            src={cartIcon}
-            alt="Add to cart"
-            className="w-[19px] h-[19px] md:w-[30px] md:h-[30px] "
-          />
+        <button className="cursor-pointer bg-[#2D3B361A] hover:bg-Juniper text-Juniper hover:text-Cream-100 w-[47px] md:w-[80px] h-[47px] md:h-[80px] rounded-[5px] md:rounded-[10px] flex justify-center items-center transition-colors duration-200">
+          <CartIcon className="w-[19px] h-[19px] md:w-[30px] md:h-[30px]  " />
         </button>
       </div>
     </div>
