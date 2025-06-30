@@ -33,7 +33,7 @@ function Hero() {
 
       <div className="md:w-[calc(100%-80px)] md:flex md:justify-between lg:justify-center md:items-center md:mt-[254px] md:mx-[40px] lg:m-0">
         <div className="mt-[50px] md:mt-0 lg:mt-[100px] w-full md:w-[360px] lg:w-[610px] h-[441px] md:h-[400px] lg:h-[676px] lg:rounded-[30px] overflow-hidden relative">
-          <img src={girl} alt="Girl Img" />
+          <img src={girl} alt="Girl Img" className="w-full h-full object-cover" />
           <div className="absolute bottom-[30px] md:bottom-[20px] w-[calc(100%-70px)] md:w-[calc(100%-42px)] lg:w-[calc(100%-134px)]  mx-[35px] md:mx-[21px] lg:mx-[67px] rounded-[200px] bg-Cream-200 p-[6px] md:p-[5px]">
             <div className="flex gap-[20px] md:gap-[15px] lg:gap-[42px]  items-center">
               <div
@@ -73,7 +73,7 @@ function Hero() {
         Shop Now
       </button>
 
-      <p className="mt-[50px] md:mt-[150px] lg:mt-[100px] mx-auto px-[30px] md:px-[40px] lg:px-[102px] text-[20px] md:text-[31px] lg:text-[53px] leading-[30px] md:leading-[46px] lg:leading-[78px] tracking-[-3.5%] md:tracking-[-5%] text-Juniper">
+      <p className="paragraph-reveal mt-[50px] md:mt-[150px] lg:mt-[100px] mx-auto px-[30px] md:px-[40px] lg:px-[102px] text-[20px] md:text-[31px] lg:text-[53px] leading-[30px] md:leading-[46px] lg:leading-[78px] tracking-[-3.5%] md:tracking-[-5%] text-Juniper">
         Experience the ultimate in skincare with our expertly formulated
         products, crafted to nourish, protect, and rejuvenate your skin.
         Combining the finest natural ingredients with advanced science, our

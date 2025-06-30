@@ -24,7 +24,7 @@ const valuesData = [
 
 const ValuesSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row lg:justify-between lg:mt-[300px] lg:mx-[100px]">
+    <section className="flex flex-col lg:flex-row lg:gap-[150px] lg:justify-center lg:mt-[300px] lg:mx-[100px]">
       <div className="mt-[100px] lg:m-0  mx-[30px]  md:mx-[40px]  flex flex-col">
         <div className="w-[220px] md:w-[260px] h-[50px] md:h-[60px] rounded-[100px] border border-Juniper bg-Cream-100 py-[15px] px-[20px] flex  gap-[20px] items-center">
           <span className="w-[20px] h-[20px] bg-Juniper rounded-full"></span>
