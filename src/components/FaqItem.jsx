@@ -25,7 +25,7 @@ const FaqItem = ({ question, answer, isOpen, onToggle }) => {
   }, [isOpen]);
 
   return (
-    <div className="w-[342px] md:w-[664px] lg:w-[600px] p-[14px] md:py-[27px] md:px-[30px] border border-Juniper rounded-[5px] bg-Cream-100 flex flex-col ">
+    <div className="max-w-[342px] md:max-w-[664px] lg:max-w-[600px] p-[14px] md:py-[27px] md:px-[30px] border border-Juniper rounded-[5px] bg-Cream-100 flex flex-col ">
       <button
           onClick={onToggle}
         className="w-full flex justify-between items-center cursor-pointer "

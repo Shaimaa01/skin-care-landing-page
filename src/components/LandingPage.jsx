@@ -1,5 +1,7 @@
-import { useRef, useLayoutEffect } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "./Header";
 import Hero from "./Hero";
 import ValuesSection from "./ValuesSection";
@@ -9,33 +11,63 @@ import CtaSection from "./CtaSection";
 import ProductExplorer from "./ProductExplorer";
 import FaqSection from "./FaqSection";
 
-const LandingPage = () => {
-  const mainRef = useRef(null);
+gsap.registerPlugin(ScrollTrigger);
 
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(mainRef.current.children, {
+const LandingPage = () => {
+  const componentRef = useRef(null);
+
+  useGSAP(
+    () => {
+      gsap.from(["header", "main > *:first-child"], {
         opacity: 0,
         y: 80,
         duration: 1.2,
         ease: "power3.out",
         stagger: 0.2,
       });
-    }, mainRef);
 
-    return () => ctx.revert();
-  }, []);
+      const sectionsToReveal = gsap.utils.toArray("main > *:not(:first-child)");
+
+      sectionsToReveal.forEach((section) => {
+        gsap.from(section, {
+          opacity: 0,
+          y: 100,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: section,
+            start: "-100px 85%",
+            toggleActions: "play none none none",
+            // markers:true,
+          },
+        });
+      });
+
+      gsap.from("footer", {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: "footer",
+          start: "top 95%",
+          toggleActions: "play none none none",
+        },
+      });
+    },
+    { scope: componentRef }
+  ); 
 
   return (
-    <div ref={mainRef} className="bg-Cream-200 font-inter">
+    <div ref={componentRef} className="bg-Cream-200 font-inter">
       <Header />
       <main>
         <Hero />
         <ValuesSection />
         <ProductsSection />
-        <CtaSection/>
-        <ProductExplorer/>
-        <FaqSection/>
+        <CtaSection />
+        <ProductExplorer />
+        <FaqSection />
       </main>
       <Footer />
     </div>

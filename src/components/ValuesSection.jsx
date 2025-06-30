@@ -1,4 +1,4 @@
-import womanWithEyePatches from "/assets/imgs/Jun 15, 2025, 11_52_20 PM 2.png"; // <-- REPLACE
+import womanWithEyePatches from "/assets/imgs/Jun 15, 2025, 11_52_20 PM 2.png"; 
 import awardIcon from "/assets/icons/award-svgrepo-com 1.svg";
 
 const valuesData = [
@@ -67,7 +67,7 @@ const ValuesSection = () => {
           <img
             src={womanWithEyePatches}
             alt="Woman with eye patches"
-            className="w-full"
+            className="w-full h-full object-cover"
           />
           <div className="absolute bottom-[40px] md:bottom-[50px] lg:bottom-[81px] w-[calc(100%-100px)] md:w-[calc(100%-344px)] lg:w-[calc(100%-448px)]  mx-[50px] md:mx-[172px] lg:mx-[224px] rounded-[200px] bg-Cream-200 p-[6px] ">
             <div className="flex gap-[20px] md:gap-[37px]   items-center">
