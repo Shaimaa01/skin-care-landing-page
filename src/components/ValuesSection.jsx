@@ -1,26 +1,7 @@
 import womanWithEyePatches from "/assets/imgs/Jun 15, 2025, 11_52_20 PM 2.png"; 
 import awardIcon from "/assets/icons/award-svgrepo-com 1.svg";
+import { valuesData } from "../constants/landingPageData";
 
-const valuesData = [
-  {
-    number: "01",
-    title: "Bio Ingredients",
-    description:
-      "Get naturally beautiful and transform with our bio ingredients creams for healthy, radiant skin.",
-  },
-  {
-    number: "02",
-    title: "Everything Natural",
-    description:
-      "Pure ingredients for pure skin. The Perfect solution for your skin care needs.",
-  },
-  {
-    number: "03",
-    title: "All Handmade",
-    description:
-      "Made with love and care. Just for you. Give your skin the tender loving care it deserves.",
-  },
-];
 
 const ValuesSection = () => {
   return (

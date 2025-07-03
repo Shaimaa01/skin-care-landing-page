@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FaqItem from "./FaqItem";
-import { faqData } from "./FaqData";
+import { faqData } from "../constants/landingPageData";
 import necessaireLotion from "/public/assets/imgs/mathilde-langevin-p3O5f4u95Lo-unsplash 1.png";
 import helpIcon from "/public/assets/icons/headphone-svgrepo-com 1.svg";
 

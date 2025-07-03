@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useSlider } from "../hooks/useSlider";
 import ArrowButtons from "./ArrowButtons";
 import ProductCard from "./ProductCard";
-import { productsData } from "./ProductsData";
+import { productsData } from "../constants/landingPageData";
 import gsap from "gsap";
 
 const categories = ["NEW ARRIVAL", "CLEANSING", "ACNE FIGHTER", "ANTI AGGING"];
