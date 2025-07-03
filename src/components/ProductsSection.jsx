@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard";
-import { productsData } from "./ProductsData";
+import { productsData } from "../constants/landingPageData";
 import { useSlider } from "../hooks/useSlider";
 import ArrowButtons from "./ArrowButtons";
 
