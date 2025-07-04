@@ -1,4 +1,3 @@
-
 # Skin Care Landing Page 
 
 A responsive single-page application built with React and Vite, featuring a component-based architecture and a suite of animations powered by GSAP.
@@ -29,16 +28,15 @@ A responsive single-page application built with React and Vite, featuring a comp
 *   **Framework:** React (with Vite)
 *   **Styling:** Tailwind CSS v4
 *   **Animations:** GSAP (GreenSock Animation Platform)
-*   **Deployment:** Vercel / Netlify
+*   **Deployment:** Vercel
 
 ## Technical Implementation Note
 
 ### Custom Dotted Border
 
-The unique dotted border in the design could not be replicated with standard Tailwind classes.
+The unique dotted and dashed borders in the design could not be replicated with standard Tailwind classes.
 
-To solve this, a custom SVG was applied as a `background-image`. The dotted effect was achieved by setting the SVG's `stroke-dasharray` to have a zero-length dash and combining it with `stroke-linecap='round'`. The rounded ends of the zero-length line merge to form a perfect dot. This was defined as a reusable CSS variable for a clean and maintainable implementation.
-https://kovart.github.io/dashed-border-generator/
+To achieve this effect, I used the [Dashed Border Generator](https://kovart.github.io/dashed-border-generator/) website to create a custom SVG. This SVG was then applied as a `background-image` in CSS. By setting the SVG's `stroke-dasharray` to a zero-length dash and using `stroke-linecap='round'`, the border appears as perfect dots. The generated SVG is stored as a reusable CSS variable, making it easy to apply and maintain throughout the project.
 
 ## Running the Project Locally
 
