@@ -7,9 +7,10 @@ const ArrowButtons = ({ onPrevClick, onNextClick, canPrev, canNext }) => {
     disabled:opacity-50 disabled:cursor-not-allowed
     transform transition-transform duration-200 ease-in-out
     hover:scale-105 active:scale-95
+    
   `;
   return (
-    <div className="flex items-center justify-center gap-[50px] lg:gap-[80px]  mt-[40px] lg:mt-0 ">
+    <div className=" p-2 flex items-center justify-center gap-[50px] lg:gap-[80px]  mt-[40px] lg:mt-0 ">
       <button
         onClick={onPrevClick}
         disabled={!canPrev}
